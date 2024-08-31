@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+.container{
+    display: grid;
+    /* grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly; */
+    background-color: rgb(82, 196, 238);
+    padding: 10px;
+    grid-template-areas: 'navigation navigation navigation navigation ' 
+    'menu main main main'
+    'menu content content content'
+    'footer footer footer  footer'
+    ;
+}
+.content1>h3{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.container>div{
+    align-content: center;
+     background-color: white;
+     font-size: large;
+     text-align: center;
+     margin: 5px;
+     padding: 10px;
+}
+.box1{
+    align-items: center;
+    justify-content:space-between;
+}
+.content2{
+    display: flex;
+    column-gap: 30px;   
+}
+.input{
+    display: flex;
+
+}
+.input>input{
+    width: 260px;
+    height: 38px;
+    border-radius:10px 0px 0px 10px;
+    border-right: none;
+    border: 2px solid black;
+    
+}
+.input>button{
+    width: 80px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-left: none;
+    border-radius: 0px 10px 10px 0px;
+}
+.input>input::placeholder{
+    color: black;
+    padding-left: 10px;
+}
+.item1{
+    grid-area: navigation;
+    border-radius: 5px;
+}
+.item2{
+    height: 98vh;
+    width: 300px;
+    border-radius: 5px;
+    grid-area: menu;
+}
+.item3{
+    grid-area: main;
+    border-radius: 5px;
+}
+.item4{
+    grid-area: content;
+    border-radius: 5px;
+}
+.item5{
+    grid-area: footer;
+    border-radius: 5px;
+}
+.box1{
+    display: flex;
+}
+#icon1{
+    height: 40px;
+    width: 40px;
+    color: white;
+    background-color: black;
+    align-content: center;
+    border-radius: 50%;
+}
+#icon2{
+    margin-top: 15px;
+    margin-right: 20px;
+}
+.mainsub>img{
+    height: 300px;
+    width: 300px;
+}
+.mainsub2>.mini-mainsub21>.likes>span{
+    background-color: rgb(0, 206, 0);
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+}
+.item3{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+.item4{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.mini-mainsub2{
+    gap: 40px;
+    justify-content:left;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.mini-mainsub21{
+    color: gray;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+.action{
+    width: 30px;
+    height: 30px;
+}
+.action>.collection{
+    background-color: black;
+    box-shadow: 5px 5px 10px rgb(86, 86, 86);
+    border-radius: 10px;
+    width: 200px;
+      display: grid;
+      gap: 13px;
+      display: none;
+}
+.action:hover .collection{
+    display: grid;
+    position:absolute;
+    right: 10px;
+    z-index: 0;
+}
+.action>i:hover{
+    scale: 1.1;
+}
+
+.action .collection a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    cursor: progress;
+} 
+.collection>a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: all 800ms;
+}
+.mainsub2>.list{
+    justify-content: left;
+    text-align: left;
+    overflow: scroll;
+    height: 150px;
+}
+.list>p>i{
+    color: green;
+    margin-right: 10px;
+}
+.item2>.btn1>button>a{
+   text-decoration: none;
+   color: white;
+}
+.item2>.btn1>button{
+    width: 200px;
+    height: 50px;
+    display: grid;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.btn1{
+    display: grid;
+    justify-items: center;
+    row-gap: 30px;
+}
+#con{
+    margin-top: -165px;
+    margin-right:10px; 
+    color:gray;
+}
+#con:hover{
+    color: red;
+}
+.item5{
+    height: 300px;
+}
+.classmain>.sub1>h5{
+    color: gray;
+    padding: 4px;
+}
+.classmain>.sub2>h5{
+    color: gray;
+    padding: 4px;
+}
+.classmain>.sub3>h5{
+    color: gray;
+    padding: 4px;
+}
+.classmain{
+    justify-content: space-evenly;
+    display: flex;
+}
+.iframeclass{
+    height: 200px;
+    width: 400px;
+}
